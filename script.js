@@ -23,9 +23,6 @@ option.addEventListener('change', function () {
     console.log(winnerScore)
 })
 
-/* ----------------------------------------------------------------------------- */
-
-
 // button player one function
 
 playerOneBtn.addEventListener('click', function () {
