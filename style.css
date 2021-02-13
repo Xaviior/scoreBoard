@@ -1,0 +1,82 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(253, 253, 227);
+}
+
+#main-section{
+/*     border: 1px solid red; */
+    margin: auto;
+    width: 32%;
+    height: 50vh;
+}
+
+#logo{
+    height: 150px ;
+    width: 200;
+}
+#header{
+/*     border: 1px solid red; */
+    align-self: center;
+}
+
+.player-one-button, .player-two-button, .reset-button{
+    border:none;
+    width: 15em;
+    height: 5em;
+    background-color: seagreen;
+    border-radius: 3px;
+    box-shadow: 5px 5px 20px grey;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+}
+.player-two-button{
+    background-color: rgb(48, 118, 179);
+}
+.reset-button{
+    background-color: rgba(241, 45, 45, 0.904);
+}
+
+.scoreboard{
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 5px 5px 10px grey;
+    background-color: rgb(253, 253, 227);
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    font-size: 30px;
+}
+.option{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#value{
+    height: 30px;
+    width: 100px;
+    background-color: rgb(253, 253, 227);
+    border-radius: 25px;
+}
