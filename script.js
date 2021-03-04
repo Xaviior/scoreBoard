@@ -20,7 +20,7 @@ let isGameOver = false;
 let winnerScore = parseInt(option.value);
 option.addEventListener('change', function () {
     winnerScore = parseInt(option.value);
-    console.log(winnerScore)
+    reset();
 })
 
 // button player one function
@@ -32,8 +32,8 @@ playerOneBtn.addEventListener('click', function () {
         isGameOver = true;
         playerOneScore.style.color = 'Green';
         playerTwoScore.style.color = 'Red';
-        playerOneBtn.style.opacity = '0.5';
-        playerTwoBtn.style.opacity = '0.5';
+        playerOneBtn.disabled = true;
+        playerTwoBtn.disabled = true;
     }
     playerOneScore.textContent = playerOneScoreUpdated;
 });
@@ -46,13 +46,23 @@ playerTwoBtn.addEventListener('click', function () {
         isGameOver = true;
         playerOneScore.style.color = 'Red';
         playerTwoScore.style.color = 'Green';
-        playerOneBtn.style.opacity = '0.5';
-        playerTwoBtn.style.opacity = '0.5';
+        playerOneBtn.disabled = true;
+        playerTwoBtn.disabled = true;
     }
     playerTwoScore.textContent = playerTwoScoreUpdated;
 })
 
 // reset button function
-resetBtn.addEventListener('click', function () {
-    window.location.reload();
-})
+resetBtn.addEventListener('click', reset)
+
+function reset() {
+    isGameOver = false;
+    playerOneScoreUpdated = 0;
+    playerTwoScoreUpdated = 0;
+    playerOneScore.textContent = 0;
+    playerTwoScore.textContent = 0;
+    playerOneBtn.disabled = false;
+    playerTwoBtn.disabled = false;
+    playerOneScore.style.color = 'Black';
+    playerTwoScore.style.color = 'Black';
+}
