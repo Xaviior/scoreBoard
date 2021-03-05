@@ -16,6 +16,12 @@ let playerTwoScoreUpdated = 0;
 // er spillet ferdig eller i gang?
 let isGameOver = false;
 
+// Button Disabled
+function disable() {
+    playerOneBtn.disabled = true;
+    playerTwoBtn.disabled = true;
+}
+
 // DroppDownMeny
 let winnerScore = parseInt(option.value);
 option.addEventListener('change', function () {
@@ -24,7 +30,6 @@ option.addEventListener('change', function () {
 })
 
 // button player one function
-
 playerOneBtn.addEventListener('click', function () {
     if (!isGameOver) {
         playerOneScoreUpdated += 1;
@@ -32,8 +37,7 @@ playerOneBtn.addEventListener('click', function () {
         isGameOver = true;
         playerOneScore.style.color = 'Green';
         playerTwoScore.style.color = 'Red';
-        playerOneBtn.disabled = true;
-        playerTwoBtn.disabled = true;
+        disable()
     }
     playerOneScore.textContent = playerOneScoreUpdated;
 });
@@ -46,8 +50,7 @@ playerTwoBtn.addEventListener('click', function () {
         isGameOver = true;
         playerOneScore.style.color = 'Red';
         playerTwoScore.style.color = 'Green';
-        playerOneBtn.disabled = true;
-        playerTwoBtn.disabled = true;
+        disable()
     }
     playerTwoScore.textContent = playerTwoScoreUpdated;
 })
