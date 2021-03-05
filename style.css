@@ -5,28 +5,18 @@ body{
     display: flex;
     justify-items: center;
     justify-content: center;
-    /* border: 1px solid red; */
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(253, 253, 227);
 }
 
 #main-section{
-/*     border: 1px solid red; */
     margin: auto;
     width: 700px;
     height: 400px;
     padding: 5px;
 }
 
-#logo{
-    height: 150px ;
-    width: 200;
-}
-#header{
-/*     border: 1px solid red; */
-    align-self: center;
-}
 .buttons{
     display: flex;
     justify-content: center;
@@ -64,7 +54,6 @@ body{
     background-color: rgb(253, 253, 227);
 }
 .player-one{
-    /* border: 1px solid red; */
     width: 50px;
     height: 50px;
     display: flex;
@@ -72,7 +61,6 @@ body{
     align-items: center;
 }
 .player-two{
-    /* border: 1px solid red; */
     width: 50px;
     height: 50px;
     display: flex;
@@ -80,7 +68,6 @@ body{
     align-items: center;
 }
 .mid{
-    /* border: 1px solid red; */
     width: 100px;
     height: 50px;
     display: flex;
@@ -112,7 +99,6 @@ body{
 }
 
 /* Small and phones */
-
 @media(max-width: 768.98px){
     body{
         padding: 0px;
@@ -120,7 +106,6 @@ body{
         display: flex;
         justify-items: center;
         justify-content: center;
-        /* border: 1px solid red; */
         height: 100vh;
         font-family: 'Montserrat', sans-serif;
         background-color: rgb(253, 253, 227);
